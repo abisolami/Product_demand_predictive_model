@@ -29,7 +29,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 # Set page configuration
 st.set_page_config(
     # page_title="Demand Forecasting System",
-    page_icon="📊",
+    page_icon="",
     # layout="wide"
 )
 
@@ -49,7 +49,7 @@ def load_data(file=None):
         else:
             # Try to load the default file (for development/testing)
             try:
-                data = pd.read_csv("ecom.csv")
+                data = pd.read_csv("ecommmerce_dataset.csv")
             except FileNotFoundError:
                 st.warning("No file uploaded and default file not found. Please upload a file.")
                 return None
